@@ -1,7 +1,11 @@
-# nodeAPI-part-1
+# nodeAPI-part-2
 
-PART 1: Basic node API with MongoDb using Express and Mongoose
+PART 2: This project is created as a Restful CRUD API with Node.js, Express and MongoDB
 
+API Features:
+The server application can create, read, update and delete data from database. Namely, products.
+
+Clone and run via:
 npm init
 
 .env and node_modules on .gitignore
@@ -9,6 +13,8 @@ npm init
 dependencies installed:
 
 express
+
+express-async-handler
 
 mongoose
 
