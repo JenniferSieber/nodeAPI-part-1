@@ -2,6 +2,10 @@ require('dotenv').config({path: '.env'})
 const express = require('express')
 const mongoose = require('mongoose');
 const productRoute = require('./routes/productRoute')
+const userRoute = require('./routes/userRoute')
+const errorMiddleware = require('./middleware/errorMiddleware')
+
+
 const app = express()
 
 const PORT = process.env.PORT
@@ -12,6 +16,7 @@ app.use(express.urlencoded({ extended: false }))
 
 // routes
 app.use('/api/products', productRoute);
+app.use('/api/users', userRoute);
 
 // greeting
 app.get('/', (req, res) => {
